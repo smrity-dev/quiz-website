@@ -58,6 +58,7 @@ Quiz-Website/
 
 ### Home Page
 
+<<<<<<< HEAD
 (Add Screenshot Here)
 
 ### Quiz Page
@@ -67,6 +68,17 @@ Quiz-Website/
 ### Result Page
 
 (Add Screenshot Here)
+=======
+![Home Page](images/home.png)
+
+### Quiz Page
+
+![Quiz Page](images/quiz.png)
+
+### Result Page
+
+![Result Page](images/result.png)
+>>>>>>> 1f11644296adef0f05cd572b1387bff366c4fe58
 
 ---
 
@@ -163,4 +175,8 @@ https://github.com/smrity-dev
 
 ---
 
+<<<<<<< HEAD
 ⭐ If you like this project, don't forget to Star the repository.
+=======
+⭐ If you like this project, don't forget to Star the repository.
+>>>>>>> 1f11644296adef0f05cd572b1387bff366c4fe58
