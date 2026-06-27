@@ -1,0 +1,171 @@
+             /* container ke background ke liye*/             
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+             /* Inside the container*/ 
+
+.container, .quiz-container {
+  background: #1e293b;
+  padding: 25px 40px;
+  border-radius: 15px;
+  width: 450px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #f8fafc;
+}
+
+   /*After student quiz portal heading*/ 
+h1 {    
+  margin-bottom: 15px;
+  color: #f8fafc;
+}
+
+   /*Selection buttons of courses and year in row or columns*/ 
+.selection-box {   
+   display:flex;   
+   flex-direction:column;   
+   gap:10px;    
+   }
+
+   /*label of course &, year|selection of B.tech/Bca/bba 1/2/3/4 year and | buttons font size*/
+label,select,button {
+  font-size:20px;
+}
+
+select{
+  background:#334155;
+  color:#f8fafc;
+  border:none;
+  padding:10px;
+  border-radius:8px;
+}
+
+   /*Start quiz button*/ 
+
+button {
+  padding:15px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  background: linear-gradient(135deg,#38bdf8,#6366f1);
+  color:white;
+  border:none;
+  font-weight:bold;
+  transition:0.3s ease;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+
+/*In questions box, 4 answers option_button*/
+
+.btn-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:30px;
+}
+
+.btn-grid button {
+  background:#334155;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  color:#f8fafc;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s ease;
+}
+
+.btn-grid button:hover{
+  background:#475569;
+  transform:scale(1.03);
+}
+
+/*If answer is correct colour is green*/
+.correct {
+  background-color:#22c55e !important; 
+  color:white;
+}
+
+/*If answer is not correct colour is red*/
+.wrong {
+  background-color:#ef4444 !important; 
+  color:white;
+}
+
+/*click on next button to go for another questions*/
+.next-btn {
+  margin-top:20px;
+  background: linear-gradient(135deg,#f59e0b,#f97316);
+}
+
+/*Hide all contents*/
+.hide {                    
+  display:none;
+}
+
+/*Final result will be*/
+.result {
+  margin-top:20px;
+  font-weight:bold;
+  font-size:18px;
+  color:#e2e8f0;
+}
+
+/*Maintain Timing area*/
+.timer {
+  font-size:18px; 
+  margin-bottom:10px; 
+  color:#38bdf8;
+  font-weight:bold;
+}
+
+/*Final Time Deadlines*/
+.timer.warning {
+  color:#ef4444;
+}
+
+/*options->answers->font->weight/size*/
+.answer-icon {
+   font-weight:bold;
+   margin-left:5px;   
+   font-size:20px;   
+}
+
+/*Final review page at last*/
+.review-question {
+  text-align:center;   
+  margin-bottom:25px;
+  color:#f1f5f9;
+}
+
+/*If review answer is correct, colour is green*/
+.review-answer.correct {
+  color:#22c55e;
+}
+
+/*If review answer is not correct, colour is red*/
+.review-answer.wrong {
+  color:#ef4444;
+}
+
+/*Review button margin(length space) from top*/
+#review-content button {
+  margin-top:15px;
+}
+
+.progress {
+  margin:10px 0; 
+  font-weight:bold; 
+  color:#cbd5e1;
+}

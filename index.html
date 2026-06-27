@@ -1,0 +1,99 @@
+             <!--Start via tap ! emet abbriviation-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Quiz Portal</title>
+
+             <!--Link css file here-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+             <!-- FRONT PAGE -->
+<div class="container" id="front-page">
+
+  <h1>Student Quiz Portal</h1>
+  <p>Select your course and year to start the quiz.</p>
+
+  <div class="selection-box">
+
+          <!-- Selection of courses what you want -->
+    <label for="course">Course:</label>
+    <select id="course">
+      <option value="">--Select--</option>
+      <option value="btech">B.Tech</option>
+      <option value="bca">BCA</option>
+      <option value="bscagri">B.Sc Agriculture</option>
+      <option value="bba">BBA</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <select id="year">
+      <option value="">--Select--</option>
+    </select>
+
+    <button id="start-btn">Start Quiz</button>
+
+  </div>
+</div>
+
+             <!-- QUIZ PAGE -->
+<div class="quiz-container hide" id="quiz-page">
+  <div class="timer">Time Left: <span id="timer">30</span>s</div>
+    <div id="question-container">
+
+            <!--Start making more questions here-->
+      <h2 id="question">Question text</h2>
+
+            <!--Inside question make answers options key-->
+        <div id="answer-buttons" class="btn-grid"></div>
+        
+    </div>
+    <div class="controls">
+      <button id="next-btn" class="next-btn hide">Next</button>
+    </div>
+</div>
+
+             <!-- REVIEW PAGE -->
+<div class="container hide" id="review-page">
+   <h1>Quiz Review</h1>
+   <div id="review-content"></div>
+   <button id="restart-btn">Restart Quiz</button>
+</div>
+
+<section class="movies-section">
+
+  <h2>Trending Now</h2>
+
+  <div class="movie-row">
+
+    <div class="movie-card">
+      <img src="images/movie1.jpg" alt="">
+    </div>
+
+    <div class="movie-card">
+      <img src="images/movie2.jpg" alt="">
+    </div>
+
+    <div class="movie-card">
+      <img src="images/movie3.jpg" alt="">
+    </div>
+
+    <div class="movie-card">
+      <img src="images/movie4.jpg" alt="">
+    </div>
+
+    <div class="movie-card">
+      <img src="images/movie5.jpg" alt="">
+    </div>
+
+  </div>
+
+</section>
+
+             <!--Link JavaScript file here-->
+<script src="script.js"></script>
+</body>
+</html>
